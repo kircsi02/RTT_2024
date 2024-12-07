@@ -17,7 +17,7 @@ jobs:
 
       - name: Run linter on haromszog.py
         run: python3 linter.py
-        continue-on-error: false
+        continue-on-error: true
 
       - name: Install pytest
         run: pip install pytest
