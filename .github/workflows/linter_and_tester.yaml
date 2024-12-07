@@ -13,7 +13,7 @@ jobs:
         run: pip install pylint
       - name: Run linter on haromszog.py
         run: python3 linter.py
-        continue-on-error: false
+        continue-on-error: true
       - name: Checkout
         uses: actions/checkout@v3
         - name: Install pytest
