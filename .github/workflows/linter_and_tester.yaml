@@ -9,26 +9,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Install pylint
-      run:
-        echo "Installing pylint..."
-        run: pip install pylint
-        echo "Pylint installed"
+      run: pip install pylint
     - name: Run linter on haromszog.py
-      run:
-        echo "Linting..."
-        run: python3 linter.py
-        echo "Linting complete"
+      run: python3 linter.py
       continue-on-error: false
     - name: Checkout
       uses: actions/checkout@v3
     - name: Install pytest
-      run:
-        echo "Installing pytest..."
-        run: pip install pytest
-        echo "Pytest installed"
+      run: pip install pytest
     - name: Run tests on haromszog.py
-      run:
-        echo "Testing..."
-        run: python3 test.py
-        echo "Testing complete"
+      run: python3 test.py
       continue-on-error: false
