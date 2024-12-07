@@ -1,0 +1,21 @@
+[MASTER]
+
+disable=
+    too-public-methods,
+    consider-using-f-string
+
+max-module-lines=500
+max-line-length=100
+timeout=10
+
+attr-name-style=snake_case
+class-naming-style=snake_case
+function-naming-style=snake_case
+method-naming-style=snake_case
+variable-naming-style=snake_case
+inlinevar-naming-style=snake_case
+const-naming-style=UPPER_CASE
+module-naming-style=snake_case
+
+max-methods=20
+max-args=5
